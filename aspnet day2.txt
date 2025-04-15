@@ -1,0 +1,68 @@
+razor expressions:
+model
+layout
+attribute values
+arrays / collections
+
+--------------------------------------------------
+
+Passing data
+MVC
+ViewBag (controller->view)
+
+Web API
+Web API passing data
+1. query parameters
+
+http://localhost:50330/home/search?word=asp&page=2
+
+2. route parameters
+
+http://localhost:50330/pass/getFullName/lala/santos
+
+-------------------------------------------------------
+
+Database ---ADO.NET / LINQ--- ASP.Net (MVC Crud)
+
+ADO.NET objects:
+resultset, connection, etc...
+
+mssql(db=aspnetclass, table=Employees)
+Empid
+Name
+City
+Address
+
+1. create model class
+2. create controller (with read/write actions)
+3. prep database
+
+ms sql instance (service)
+sql server management studio
+crud operations (stored procedures)
+
+4. project
+
+db(sprocs)-------------------->(Repository1)-->(controller) app
+a. create repository class
+b. connect app to database
+
+hostname? 	LAPTOP-HTH010Q4\mssqlserver 
+user? 		sa
+password? 	123
+database? 	aspnetclass
+
+Web.config
+
+c. modify repository
+
+--------------------------------------------------------
+project link:
+https://drive.google.com/file/d/1gtbkyEnE2UdE5LTFqcVgy1bkI5LJjziv/view?usp=sharing
+
+
+
+
+
+
+

@@ -1,0 +1,182 @@
+training materials:
+https://github.com/johnreygoh/aspnetclass
+
+tools:
+1. visual studio 2022 community
+asp.net core web app
+asp.net core web app (mvc)
+asp.net core web api
+asp.net core empty
+asp.net web application (.net framework)
+
+2. postman
+3. ms sql server (developer)
+4. sql server mgmt studio (ssms)
+
+------------------------------------------------------------------
+"most of systems microsoft"
+azure -> app services
+
+ASP.NET (c#)
+
+asp.net (net framework) MVC 5	(for windows servers only / IIS)
+-maturity
+-volume of packages
+-if windows, highest compat with other ms/windows-only tools
+WCF, .net maui
+-net framework (windows)
+
+asp.net core (for linux / ms / kerstel)
+-started 2016
+-packages?
+-core clr (cross platform)
+
+------------------------------------------------------
+
+MVC and API
+
+MVC (Model-View-Controller)
+
+db--------model----controller(logic)----views(html)	
+			|
+			routes
+			|
+			clients/FE apps
+			
+API
+	    [ a  p  i ]
+db--------model + controller(endpoints)-----------postman
+
+---------------------------------------------------
+
+web api:
+php frameworks (laravel, yii2, zend, cakephp, symfony)
+python (django, flask)
+java (spring / spring boot)
+.net (asp.net)
+javascript frameworks (nodejs, expressjs, .....)
+
+-----------------------------------------------------
+
+MVC
+
+net framework
+
+[dev mach VS + net framework]		[iis server + windows]
+4.7.2					4.8
+					4.7.2
+
+					[iis server + public hosting]
+					4.6
+
+-------------------------------------------------------
+
+action = controller function 
+
+ActionResult -> flexible (view, json, redirect, ...)
+
+
+ViewResult -> return view
+JsonResult -> json object
+RedirectResult -> url redirection
+---------------------------------------------------
+
+controller(logic) [data]------> view(display) .cshtml
+
+"ViewBag"
+
+*razor = template engine for views
+
+--------------------------------------------------------------
+
+Activity 1: Simple Data Entry App
+
+RSVP
+1. create a data model ("GuestResponse")
+table/class = "object" 
+
+data model = class
+
+2. create controller
+3. create view + add link
+4. create controller action for the reservation form
+5. handling form
+
+
+C(index) --calls--> V(home)
+V(home) --link--> C(ReservationForm) --calls--> V(ReservationForm)
+V(ReservationForm) --submit--> C(ReservationForm[POST])	
+C(ReservationForm[POST]) --calls and pass data--> V(Thanks)
+
+6. adding validation
+
+----------------------------------------------------------
+
+Activity 2 (checking 3:30pm)
+1. Sample Data Entry 
+controller : register new participant
+
+form:
+first name
+last name
+email
+gender
+
+2. after form submission
+
+Thank you for participating Mr. Ed!
+Participant Info:
+Ed Reyes
+edreyes@abc.com
+
+3. add model validation
+
+----------------------------------------------------------------
+
+Activity 3:  Using Razor Expressions
+
+@
+
+View
+-model
+-layout
+-control structs (if, switch, etc...)
+
+1. model class
+
+Product
+int ProductID
+string Name
+string Description
+string Category
+decimal Price
+
+2. layout
+
+layout
+
+		ABC Company
+		xxxxxxxxxxx
+____________________________________________________
+menu1	menu2	menu3
+____________________________________________________
+======================================================
+		
+		content body
+
+======================================================
+_____________________________________________________
+all right reserve...
+
+			
+
+20 views
+
+
+
+
+
+
+
+
+
