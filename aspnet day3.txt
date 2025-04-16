@@ -1,0 +1,154 @@
+MVC project (Model-Controller-Views)
+1. database,table,fields 
+(other databases, nuget packages)
+
+2. project (empty, with mvc structure)
+3. model class
+
+scene1:
+model class ---> create table
+
+scene2:
+existing table ---> model
+
+(id,name,dept)[sprocs]<-----(empid,ename,edept)
+
+4. connection to database
+
+a. server explorer
+b. add configuration in web.config
+
+  <connectionStrings>
+    
+<add name="ConnString_aspnetclass"
+         connectionString="Data Source=LAPTOP-HTH010Q4;Initial Catalog=aspnetclass;User ID=sa;Password=123;Encrypt=False"
+         providerName="System.Data.SqlClient"/>
+
+<add name="con2"
+         connectionString="Data Source=LAPTOP-HTH010Q4;Initial Catalog=aspnetclass;User ID=sa;Password=123;Encrypt=False"
+         providerName="System.Data.SqlClient"/>
+
+
+  </connectionStrings>
+
+5. created repository
+
+ado.net =  system.data & system.data.sqlclient
+
+sqlconnection
+sqlcommand
+sqldataadapter
+datatable
+datarow
+
+connection, open/close
+query, sqlcommand
+adapter, sqldataadapter
+
+6. controller actions
+
+repo methods ----- routes/endpoints
+
+"scaffolded item" <----- presets(with working code)
+
+--------------------------------------------------------
+
+MVC Activity (checking 2:10pm): create a simple crud mvc application
+1. database: aspnetclass
+table: sales
+fields:
+-salesid (int, NOT IDENTITY/Auto-Increment!)
+-salesperson (nvarchar(50))
+-amount (int)
+
+2. create stored procedures for crud
+3. create new project (MVCActivity)
+->> web app(net framework)->empty( [/]MVC )
+
+4. connect server explorer
+5. add connection to web.config
+6. add model class
+7. add repository
+8. add controller
+->> mvc 5 controller with read/write actions
+
+9. add views
+10. set default controller in routeconfig.cs
+
+------------------------------------------------------------------------------
+
+mvc ado.net objects ->>>>> entity framework
+
+ef
+-based on ado.net
+-code generation
+-instead of SQL manual, ORM methods for database mgmt
+-requires "dbcontext" class
+-not installed by default (nuget package)
+
+cons:
+-performance slower than pure adonet
+-complex sql queries
+
+steps:
+1. database: aspnetclass
+table: sales
+fields:
+-salesid (int, NOT IDENTITY/Auto-Increment!)
+-salesperson (nvarchar(50))
+-amount (int)
+
+2. create new project (MVCActivity)
+->> web app(net framework)->empty( [/]MVC )
+
+3. connect server explorer
+4. add connection to web.config
+5. add model class
+6. add dbcontext class
+7. automate generation of controller actions and views
+8. set default controller in routeconfig.cs
+
+"sql" ---> LINQ
+
+----------------------------------------------------------
+
+Web API
+
+db --- [API] [endpoints] ------ postman (simulate requests, RESTFul)
+					get, post, put, patch, delete	
+
+
+
+mvc:
+localhost:33445/values/index
+localhost:33445/values/create
+
+restful api:
+[get]	localhost:33445/api/values
+[get]	localhost:33445/api/values/3
+[post]	localhost:33445/api/values
+[put]	localhost:33445/api/values/1
+[delete]localhost:33445/api/values/1
+
+--------------------------------------------------
+
+web api
+1. prep database
+2. server explorer
+3. webconfig connection string
+4. model class
+5. Interface (Employee Repository)
+6. EmployeeRepository
+7. Controller
+
+project:
+https://drive.google.com/file/d/1dVcf4jVkUyNUPEabCQ03okb8vtF1NXGx/view?usp=sharing
+
+
+
+
+
+
+
+
+
