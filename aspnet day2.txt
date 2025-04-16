@@ -57,8 +57,8 @@ Web.config
 c. modify repository
 
 --------------------------------------------------------
-project link:
-https://drive.google.com/file/d/1gtbkyEnE2UdE5LTFqcVgy1bkI5LJjziv/view?usp=sharing
+project link (updated for Day 3):
+https://drive.google.com/file/d/1W1vhlhOaDbNDndzRTaDG-PEGb9gutN8m/view?usp=sharing
 
 
 
